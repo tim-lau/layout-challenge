@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
    <title>Dawg Pizza</title>
-   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="icon" href="img/pizza-icon.png" type="image/gif" sizes="16x16"/>
 </head>
 <body>
-   <main>
+   <main class="container-fluid">
       <header>
          <h1>Dawg Pizza</h1>
          <p id="tagline">Feeding Hungry Huskies Since 2013</p>
+         <nav role="navigation">
+            <ul>
+              <li><a href="#location">location</a></li>
+              <li><a href="#menu">menu</a></li>
+              <li><a href="#about">about</a></li>
+          </ul>
+      </nav>
       </header>
-      <section id="geninfo">
+      <section class="row" id="location">
+         <div class="col-md-4">
          <h2>Address</h2>
          <a href="https://goo.gl/maps/CKrRF">
             <p>
@@ -21,13 +29,19 @@
                Seattle, WA 98105
             </p>
          </a>
+      </div>
+         <div class="col-md-4">
          <h2>Hours</h2>
          <p>Open daily from noon to midnight</p>
+      </div>
+      <div class="col-md-4">
          <h2>To Order</h2>
          <p>Call us at <a href="tel:206-555-1212">206-555-1212</a></p>
+      </div>
       </section>
-      <section id="menu">
+      <section class="row" id="menu">
          <h2>Our Menu</h2>
+         <div class="col-md-6">
          <h3>Meat Pies</h3>
          <dl>
             <dt>Bacon &amp; Pineapple</dt>
@@ -37,6 +51,8 @@
             <dt>The Bambi</dt>
             <dd>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
          </dl>
+      </div>
+      <div class="col-md-6">
          <h3>Veggie Pies</h3>
          <dl>
             <dt>Forest Floor</dt>
@@ -46,8 +62,9 @@
             <dt>Caprese</dt>
             <dd>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
          </dl>
+      </div>
       </section>
-      <section id="aboutus">
+      <section id="about">
          <h2>About Us</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
